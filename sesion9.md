@@ -138,6 +138,12 @@ Decimal a Binario<br>
 
 Decimal a Hexadecimal<br>
 
+```
+```
+
 Binario a Decimal<br>
+
+```
+```
 
 Hexadecimal a Binario<br>
