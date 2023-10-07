@@ -26,11 +26,42 @@ Además, la superclase Musica debe tener un atributo titulo que indique el títu
 
 Crear las clases hijas necesarias para representar diferentes tipos de música, como por ejemplo:
 
+```
+public abstract class Musica {
+    private String titulo;
+    public Musica(String titulo) {
+        this.titulo = titulo;
+    }
+    public String getTitulo() {
+        return titulo;
+    }
+    public abstract void play();
+    public abstract void stop();
+    public abstract void pause();
+    public abstract void next();
+    public abstract void previous();
+}
+```
+
 1. **Cancion:** representa una canción en general.
 
 Atributos Privados: Declarar dos atributos privados, artista (nombre del artista de la canción) y album (nombre del álbum de la canción).
 
+```
+public class Cancion extends Musica{
+    private String artista;
+    private String album;
+}
+```
 Constructor: Implementar un constructor que acepte tres parámetros: titulo, artista y album, y que inicialice adecuadamente los atributos de la clase "Cancion". Utiliza la palabra clave super para llamar al constructor de la clase base "Musica" pasando el titulo como argumento.
+
+```
+public Cancion(String titulo, String artista, String album) {
+        super(titulo);
+        this.artista = artista;
+        this.album = album;
+    }
+```
 
 Métodos Anulados (Override): Implementar los métodos anulados (override) de la clase base "Musica" para las acciones de reproducción (play), detención (stop), pausa (pause), avanzar (next) y retroceder (previous) en la reproducción de la canción. Cada uno de estos métodos debe imprimir un mensaje informativo adecuado en la consola.
 
