@@ -14,16 +14,65 @@ nombre (String): El nombre del producto.<br>
 precio (double): El precio del producto.<br>
 cantidad (int): La cantidad de unidades disponibles del producto.<br>
 
+```
+public class Producto {
+    private String nombre;
+    private double precio;
+    private int cantidad;
+}
+```
+
 La clase Producto debe tener los siguientes constructores sobrecargados:
 
 Un constructor por defecto que inicialice el nombre como "Desconocido", el precio como 0.0 y la cantidad como 0.<br>
+
+```
+public Producto() {
+        this.nombre = "Desconocido";
+        this.precio = 0.0;
+        this.cantidad = 0;
+    }
+```
+
 Un constructor que tome como argumentos el nombre y el precio del producto, y establezca la cantidad en 0.<br>
+
+```
+public Producto(String nombre, double precio) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = 0;
+    }
+```
+
 Un constructor que tome como argumentos el nombre, el precio y la cantidad del producto.<br>
+
+
+```
+public Producto(String nombre, double precio, int cantidad) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+```
 
 La clase Producto debe tener los siguientes métodos:
 
 calcularValorTotal(): Un método que calcule y devuelva el valor total del producto en base a su precio y cantidad.<br>
+
+```
+public double calcularValorTotal(double precio, int cantidad){
+        return precio*cantidad;
+    }
+```
 mostrarInformacion(): Un método que muestre por consola la información del producto, incluyendo el nombre, precio, cantidad y valor total.<br>
+
+```
+public void mostrarInformacion(){
+        System.out.println("Nombre:" +this.nombre);
+        System.out.println("Precio: "+this.precio);
+        System.out.println("Cantidad: "+this.cantidad);
+    }
+```
 
 Además, debes agregar los siguientes métodos sobrecargados:
 
