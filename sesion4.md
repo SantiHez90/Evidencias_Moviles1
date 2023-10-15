@@ -29,11 +29,15 @@ Utilizar getter y setter para acceder y modificar los valores de los atributos d
 
 **Instrucciones:**<br>
 
-Cree una clase llamada Producto.
-Agregue los atributos nombre, precio, cantidad, fabricante, marca y categoría a la clase Producto.
-Utilice los modificadores de acceso para controlar el acceso a los atributos de la clase.
-Agregue getter y setter para acceder y modificar los valores de los atributos de la clase.
-Pruebe la clase Producto creando una instancia de la clase y accediendo a los atributos de la instancia.
+Cree una clase llamada Producto.<br>
+
+Agregue los atributos nombre, precio, cantidad, fabricante, marca y categoría a la clase Producto.<br>
+
+Utilice los modificadores de acceso para controlar el acceso a los atributos de la clase.<br>
+
+Agregue getter y setter para acceder y modificar los valores de los atributos de la clase.<br>
+
+Pruebe la clase Producto creando una instancia de la clase y accediendo a los atributos de la instancia.<br>
 
 
 ## Solcucion
